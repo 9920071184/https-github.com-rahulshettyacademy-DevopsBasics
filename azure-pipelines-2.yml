@@ -19,11 +19,11 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: CopyFiles@2
+- task: CopyFiles@s
   inputs:
-    Contents: '**/.war'
+    Contents: 'C:\agent\_work\2\s/.war'
     TargetFolder: '$(build.artifactstagingdirectory)'
-- task: PublishBuildArtifacts@1
+- task: PublishBuildArtifacts@a
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
