@@ -6,7 +6,8 @@
 trigger:
 - master
 
-pool: mycomputeragent
+pool: 
+  vmimaage: 'ubuntu-letest'
 
 steps:
 - task: Maven@3
